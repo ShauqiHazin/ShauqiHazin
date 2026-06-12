@@ -1,0 +1,192 @@
+# ============================================================
+# OrcaFlex Riser Installation Analysis - Configuration File
+# ============================================================
+
+project:
+  name: "Riser Installation Analysis"
+  version: "1.0.0"
+  description: "Automated static analysis for riser installation"
+  author: "OrcaFlex Automation Box"
+
+# ─────────────────────────────────────────────
+# OrcaFlex Model File Settings
+# ─────────────────────────────────────────────
+model:
+  base_model_path: "templates/base_riser_model.dat"
+  output_dir: "output"
+  log_dir: "logs"
+  save_sim_files: true
+  save_results_xlsx: true
+
+# ─────────────────────────────────────────────
+# Vessel / Lay Vessel Parameters
+# ─────────────────────────────────────────────
+vessel:
+  name: "Lay Vessel"
+  type: "6DOF"                    # 6DOF or Fixed
+  initial_position:
+    x: 0.0                        # m (along pipeline route)
+    y: 0.0                        # m (lateral offset)
+    z: 0.0                        # m (heave)
+  heading: 0.0                    # degrees (0 = North)
+  draft: 8.5                      # m
+  stinger_angle: 45.0             # degrees (S-lay stinger angle)
+  stinger_length: 80.0            # m
+
+# ─────────────────────────────────────────────
+# Riser / Pipe Properties
+# ─────────────────────────────────────────────
+riser:
+  name: "Production Riser"
+  outer_diameter: 0.3239          # m (12.75 inch OD)
+  wall_thickness: 0.0254          # m (1.0 inch WT)
+  inner_diameter: 0.2731          # m
+  material: "Steel"
+  youngs_modulus: 2.07e11         # Pa
+  poissons_ratio: 0.3
+  density: 7850.0                 # kg/m3
+  coating:
+    type: "Fusion Bonded Epoxy"
+    thickness: 0.0005             # m
+    density: 1300.0               # kg/m3
+  contents:
+    fluid_type: "Seawater"
+    density: 1025.0               # kg/m3
+  corrosion_allowance: 0.003      # m
+  design_pressure: 15.0           # MPa
+  design_temperature: 80.0        # degC
+
+# ─────────────────────────────────────────────
+# Water Depth & Environment
+# ─────────────────────────────────────────────
+environment:
+  water_depth: 500.0              # m
+  seawater_density: 1025.0        # kg/m3
+  kinematic_viscosity: 1.35e-6    # m2/s
+  current_profile:
+    - depth: 0.0
+      speed: 0.5                  # m/s
+      direction: 0.0              # degrees
+    - depth: 50.0
+      speed: 0.4
+      direction: 10.0
+    - depth: 200.0
+      speed: 0.2
+      direction: 20.0
+    - depth: 500.0
+      speed: 0.05
+      direction: 30.0
+  wave:
+    apply_waves: false            # Static analysis - no waves
+  wind:
+    apply_wind: false             # Static analysis - no wind
+
+# ─────────────────────────────────────────────
+# Seabed Properties
+# ─────────────────────────────────────────────
+seabed:
+  type: "Elastic"
+  stiffness: 100.0                # kN/m/m2
+  friction_coefficient: 0.5
+  slope: 0.0                      # degrees
+
+# ─────────────────────────────────────────────
+# Installation Stages (Static Steps)
+# ─────────────────────────────────────────────
+installation_stages:
+  - stage_id: 1
+    name: "Initiation"
+    description: "Riser initiation from vessel - first joint lowered"
+    vessel_position: 0.0          # m along route
+    riser_length_deployed: 12.0   # m (one joint)
+    top_tension: 50.0             # kN
+    layback: 0.0                  # m
+    enabled: true
+
+  - stage_id: 2
+    name: "Shallow Water Lay"
+    description: "Laying through shallow water section"
+    vessel_position: 100.0
+    riser_length_deployed: 150.0
+    top_tension: 120.0
+    layback: 80.0
+    enabled: true
+
+  - stage_id: 3
+    name: "Mid Water Lay"
+    description: "Laying through mid-water section"
+    vessel_position: 300.0
+    riser_length_deployed: 350.0
+    top_tension: 200.0
+    layback: 150.0
+    enabled: true
+
+  - stage_id: 4
+    name: "Deep Water Lay"
+    description: "Laying through deep water section"
+    vessel_position: 450.0
+    riser_length_deployed: 500.0
+    top_tension: 280.0
+    layback: 200.0
+    enabled: true
+
+  - stage_id: 5
+    name: "Touchdown"
+    description: "Riser touches down on seabed"
+    vessel_position: 500.0
+    riser_length_deployed: 520.0
+    top_tension: 300.0
+    layback: 220.0
+    enabled: true
+
+  - stage_id: 6
+    name: "Pull-in"
+    description: "Final pull-in to subsea structure"
+    vessel_position: 510.0
+    riser_length_deployed: 530.0
+    top_tension: 350.0
+    layback: 230.0
+    enabled: true
+
+# ─────────────────────────────────────────────
+# Analysis Settings
+# ─────────────────────────────────────────────
+analysis:
+  type: "Static"
+  convergence_tolerance: 0.001
+  max_iterations: 200
+  damping: 0.0
+  gravity: 9.81                   # m/s2
+
+# ─────────────────────────────────────────────
+# Code Check / Acceptance Criteria
+# ─────────────────────────────────────────────
+code_check:
+  standard: "DNV-ST-F101"
+  usage_factor: 0.9
+  allowable_stress_ratio: 0.72    # fraction of SMYS
+  SMYS: 450.0                     # MPa (X65 grade)
+  SMTS: 535.0                     # MPa
+  max_allowable_bend_radius: 15.0 # m (minimum bend radius)
+  max_allowable_tension: 500.0    # kN
+  max_allowable_compression: 0.0  # kN (no compression allowed)
+  max_von_mises_ratio: 0.9        # fraction of SMYS
+
+# ─────────────────────────────────────────────
+# Results Extraction
+# ─────────────────────────────────────────────
+results:
+  extract_variables:
+    - "Effective Tension"
+    - "Bend Moment"
+    - "Shear Force"
+    - "x"
+    - "y"
+    - "z"
+    - "Curvature"
+    - "Von Mises Stress"
+    - "Axial Force"
+    - "Seabed Normal Reaction"
+  arc_length_step: 1.0            # m (result extraction spacing)
+  report_critical_sections: true
+  plot_results: true

@@ -1,0 +1,261 @@
+======================================================================
+  RISER INSTALLATION STATIC ANALYSIS REPORT
+  Project: Riser Installation Analysis
+  Generated: 2026-06-12 16:22:30
+======================================================================
+
+----------------------------------------------------------------------
+  STAGE 1: INITIATION
+----------------------------------------------------------------------
+  Description      : Riser initiation from vessel - first joint lowered
+  Vessel Position  : 0.0 m
+  Length Deployed  : 12.0 m
+  Top Tension      : 50.0 kN
+
+  CODE CHECKS (DNV-ST-F101):
+    [PASS ✓] Tension
+           max_tension_kN: 297.21
+           allowable_kN: 500.0
+           utilization: 0.5944
+           critical_arc_length_m: 49.0
+    [PASS ✓] Compression
+           min_tension_kN: 53.41
+           note: Compression not allowed during installation
+    [FAIL ✗] Bend Radius
+           min_bend_radius_m: 0.21
+           allowable_m: 15.0
+           utilization: 72.57
+    [PASS ✓] Von Mises
+           max_von_mises_MPa: 193.34
+           allowable_MPa: 405.0
+           utilization: 0.4774
+           critical_arc_length_m: 47.0
+    [PASS ✓] Hoop Stress
+           hoop_stress_MPa: 88.14
+           allowable_MPa: 405.0
+           utilization: 0.2176
+           formula: Barlow's formula: σ_h = P*(OD-WT)/(2*WT)
+
+  >>> OVERALL: FAIL ✗ <<<
+
+  SUBMERGED WEIGHT:
+    steel_weight_kN_m: 1.8343
+    contents_weight_kN_m: 0.589
+    coating_weight_kN_m: 0.0065
+    buoyancy_kN_m: 0.8336
+    total_in_air_kN_m: 2.4298
+    submerged_weight_kN_m: 1.5962
+
+----------------------------------------------------------------------
+  STAGE 2: SHALLOW WATER LAY
+----------------------------------------------------------------------
+  Description      : Laying through shallow water section
+  Vessel Position  : 100.0 m
+  Length Deployed  : 150.0 m
+  Top Tension      : 120.0 kN
+
+  CODE CHECKS (DNV-ST-F101):
+    [PASS ✓] Tension
+           max_tension_kN: 297.21
+           allowable_kN: 500.0
+           utilization: 0.5944
+           critical_arc_length_m: 49.0
+    [PASS ✓] Compression
+           min_tension_kN: 53.41
+           note: Compression not allowed during installation
+    [FAIL ✗] Bend Radius
+           min_bend_radius_m: 0.21
+           allowable_m: 15.0
+           utilization: 72.57
+    [PASS ✓] Von Mises
+           max_von_mises_MPa: 193.34
+           allowable_MPa: 405.0
+           utilization: 0.4774
+           critical_arc_length_m: 47.0
+    [PASS ✓] Hoop Stress
+           hoop_stress_MPa: 88.14
+           allowable_MPa: 405.0
+           utilization: 0.2176
+           formula: Barlow's formula: σ_h = P*(OD-WT)/(2*WT)
+
+  >>> OVERALL: FAIL ✗ <<<
+
+  SUBMERGED WEIGHT:
+    steel_weight_kN_m: 1.8343
+    contents_weight_kN_m: 0.589
+    coating_weight_kN_m: 0.0065
+    buoyancy_kN_m: 0.8336
+    total_in_air_kN_m: 2.4298
+    submerged_weight_kN_m: 1.5962
+
+----------------------------------------------------------------------
+  STAGE 3: MID WATER LAY
+----------------------------------------------------------------------
+  Description      : Laying through mid-water section
+  Vessel Position  : 300.0 m
+  Length Deployed  : 350.0 m
+  Top Tension      : 200.0 kN
+
+  CODE CHECKS (DNV-ST-F101):
+    [PASS ✓] Tension
+           max_tension_kN: 297.21
+           allowable_kN: 500.0
+           utilization: 0.5944
+           critical_arc_length_m: 49.0
+    [PASS ✓] Compression
+           min_tension_kN: 53.41
+           note: Compression not allowed during installation
+    [FAIL ✗] Bend Radius
+           min_bend_radius_m: 0.21
+           allowable_m: 15.0
+           utilization: 72.57
+    [PASS ✓] Von Mises
+           max_von_mises_MPa: 193.34
+           allowable_MPa: 405.0
+           utilization: 0.4774
+           critical_arc_length_m: 47.0
+    [PASS ✓] Hoop Stress
+           hoop_stress_MPa: 88.14
+           allowable_MPa: 405.0
+           utilization: 0.2176
+           formula: Barlow's formula: σ_h = P*(OD-WT)/(2*WT)
+
+  >>> OVERALL: FAIL ✗ <<<
+
+  SUBMERGED WEIGHT:
+    steel_weight_kN_m: 1.8343
+    contents_weight_kN_m: 0.589
+    coating_weight_kN_m: 0.0065
+    buoyancy_kN_m: 0.8336
+    total_in_air_kN_m: 2.4298
+    submerged_weight_kN_m: 1.5962
+
+----------------------------------------------------------------------
+  STAGE 4: DEEP WATER LAY
+----------------------------------------------------------------------
+  Description      : Laying through deep water section
+  Vessel Position  : 450.0 m
+  Length Deployed  : 500.0 m
+  Top Tension      : 280.0 kN
+
+  CODE CHECKS (DNV-ST-F101):
+    [PASS ✓] Tension
+           max_tension_kN: 297.21
+           allowable_kN: 500.0
+           utilization: 0.5944
+           critical_arc_length_m: 49.0
+    [PASS ✓] Compression
+           min_tension_kN: 53.41
+           note: Compression not allowed during installation
+    [FAIL ✗] Bend Radius
+           min_bend_radius_m: 0.21
+           allowable_m: 15.0
+           utilization: 72.57
+    [PASS ✓] Von Mises
+           max_von_mises_MPa: 193.34
+           allowable_MPa: 405.0
+           utilization: 0.4774
+           critical_arc_length_m: 47.0
+    [PASS ✓] Hoop Stress
+           hoop_stress_MPa: 88.14
+           allowable_MPa: 405.0
+           utilization: 0.2176
+           formula: Barlow's formula: σ_h = P*(OD-WT)/(2*WT)
+
+  >>> OVERALL: FAIL ✗ <<<
+
+  SUBMERGED WEIGHT:
+    steel_weight_kN_m: 1.8343
+    contents_weight_kN_m: 0.589
+    coating_weight_kN_m: 0.0065
+    buoyancy_kN_m: 0.8336
+    total_in_air_kN_m: 2.4298
+    submerged_weight_kN_m: 1.5962
+
+----------------------------------------------------------------------
+  STAGE 5: TOUCHDOWN
+----------------------------------------------------------------------
+  Description      : Riser touches down on seabed
+  Vessel Position  : 500.0 m
+  Length Deployed  : 520.0 m
+  Top Tension      : 300.0 kN
+
+  CODE CHECKS (DNV-ST-F101):
+    [PASS ✓] Tension
+           max_tension_kN: 297.21
+           allowable_kN: 500.0
+           utilization: 0.5944
+           critical_arc_length_m: 49.0
+    [PASS ✓] Compression
+           min_tension_kN: 53.41
+           note: Compression not allowed during installation
+    [FAIL ✗] Bend Radius
+           min_bend_radius_m: 0.21
+           allowable_m: 15.0
+           utilization: 72.57
+    [PASS ✓] Von Mises
+           max_von_mises_MPa: 193.34
+           allowable_MPa: 405.0
+           utilization: 0.4774
+           critical_arc_length_m: 47.0
+    [PASS ✓] Hoop Stress
+           hoop_stress_MPa: 88.14
+           allowable_MPa: 405.0
+           utilization: 0.2176
+           formula: Barlow's formula: σ_h = P*(OD-WT)/(2*WT)
+
+  >>> OVERALL: FAIL ✗ <<<
+
+  SUBMERGED WEIGHT:
+    steel_weight_kN_m: 1.8343
+    contents_weight_kN_m: 0.589
+    coating_weight_kN_m: 0.0065
+    buoyancy_kN_m: 0.8336
+    total_in_air_kN_m: 2.4298
+    submerged_weight_kN_m: 1.5962
+
+----------------------------------------------------------------------
+  STAGE 6: PULL-IN
+----------------------------------------------------------------------
+  Description      : Final pull-in to subsea structure
+  Vessel Position  : 510.0 m
+  Length Deployed  : 530.0 m
+  Top Tension      : 350.0 kN
+
+  CODE CHECKS (DNV-ST-F101):
+    [PASS ✓] Tension
+           max_tension_kN: 297.21
+           allowable_kN: 500.0
+           utilization: 0.5944
+           critical_arc_length_m: 49.0
+    [PASS ✓] Compression
+           min_tension_kN: 53.41
+           note: Compression not allowed during installation
+    [FAIL ✗] Bend Radius
+           min_bend_radius_m: 0.21
+           allowable_m: 15.0
+           utilization: 72.57
+    [PASS ✓] Von Mises
+           max_von_mises_MPa: 193.34
+           allowable_MPa: 405.0
+           utilization: 0.4774
+           critical_arc_length_m: 47.0
+    [PASS ✓] Hoop Stress
+           hoop_stress_MPa: 88.14
+           allowable_MPa: 405.0
+           utilization: 0.2176
+           formula: Barlow's formula: σ_h = P*(OD-WT)/(2*WT)
+
+  >>> OVERALL: FAIL ✗ <<<
+
+  SUBMERGED WEIGHT:
+    steel_weight_kN_m: 1.8343
+    contents_weight_kN_m: 0.589
+    coating_weight_kN_m: 0.0065
+    buoyancy_kN_m: 0.8336
+    total_in_air_kN_m: 2.4298
+    submerged_weight_kN_m: 1.5962
+
+======================================================================
+  END OF REPORT
+======================================================================

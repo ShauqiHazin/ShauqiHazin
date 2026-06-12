@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# OrcaFlex Riser Installation Analysis — Python Dependencies
+# ─────────────────────────────────────────────────────────────
+
+# YAML configuration parsing
+PyYAML>=6.0
+
+# Excel report generation
+openpyxl>=3.1.0
+
+# Plotting and visualization
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# Optional: Enhanced data handling
+pandas>=2.0.0
+
+# Optional: PDF report generation
+# reportlab>=4.0.0
+
+# ─────────────────────────────────────────────────────────────
+# OrcaFlex Python API (OrcFxAPI)
+# ─────────────────────────────────────────────────────────────
+# OrcFxAPI is NOT available on PyPI.
+# It is installed as part of the OrcaFlex software package.
+# Ensure OrcaFlex is installed and OrcFxAPI is on your PYTHONPATH.
+#
+# Typical location (Windows):
+#   C:\Program Files\Orcina\OrcaFlex\<version>\OrcFxAPI\Python\
+#
+# Add to PYTHONPATH or use:
+#   import sys
+#   sys.path.insert(0, r"C:\Program Files\Orcina\OrcaFlex\11.4\OrcFxAPI\Python")
+#
+# The tool runs in SIMULATION MODE if OrcFxAPI is not found.
+# ─────────────────────────────────────────────────────────────

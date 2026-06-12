@@ -1,0 +1,1226 @@
+[
+  {
+    "stage_info": {
+      "stage_id": 1,
+      "name": "Initiation",
+      "description": "Riser initiation from vessel - first joint lowered",
+      "vessel_position": 0.0,
+      "riser_length_deployed": 12.0,
+      "top_tension": 50.0,
+      "layback": 0.0,
+      "enabled": true
+    },
+    "code_checks": {
+      "tension": {
+        "max_tension_kN": 297.21,
+        "allowable_kN": 500.0,
+        "utilization": 0.5944,
+        "pass": true,
+        "critical_arc_length_m": 49.0
+      },
+      "compression": {
+        "min_tension_kN": 53.41,
+        "pass": true,
+        "note": "Compression not allowed during installation"
+      },
+      "bend_radius": {
+        "min_bend_radius_m": 0.21,
+        "allowable_m": 15.0,
+        "utilization": 72.57,
+        "pass": false
+      },
+      "von_mises": {
+        "max_von_mises_MPa": 193.34,
+        "allowable_MPa": 405.0,
+        "utilization": 0.4774,
+        "pass": true,
+        "critical_arc_length_m": 47.0
+      },
+      "hoop_stress": {
+        "hoop_stress_MPa": 88.14,
+        "allowable_MPa": 405.0,
+        "utilization": 0.2176,
+        "pass": true,
+        "formula": "Barlow's formula: \u03c3_h = P*(OD-WT)/(2*WT)"
+      },
+      "overall": {
+        "pass": false,
+        "status": "FAIL \u2717"
+      }
+    },
+    "submerged_weight": {
+      "steel_weight_kN_m": 1.8343,
+      "contents_weight_kN_m": 0.589,
+      "coating_weight_kN_m": 0.0065,
+      "buoyancy_kN_m": 0.8336,
+      "total_in_air_kN_m": 2.4298,
+      "submerged_weight_kN_m": 1.5962
+    },
+    "converged": true,
+    "results_sample": {
+      "ArcLength": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        "...",
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0
+      ],
+      "Effective Tension": [
+        53.414,
+        57.245,
+        56.07,
+        64.784,
+        71.93,
+        "...",
+        272.757,
+        281.331,
+        282.514,
+        287.911,
+        297.207
+      ],
+      "Bend Moment": [
+        -51.637,
+        -52.462,
+        -47.273,
+        -47.881,
+        -38.625,
+        "...",
+        37.238,
+        42.44,
+        40.841,
+        48.18,
+        52.551
+      ],
+      "Shear Force": [
+        -7.78,
+        -7.616,
+        -5.24,
+        -4.221,
+        -3.433,
+        "...",
+        7.573,
+        8.256,
+        5.597,
+        10.972,
+        11.986
+      ],
+      "x": [
+        0.727,
+        10.869,
+        18.244,
+        30.268,
+        37.024,
+        "...",
+        450.513,
+        459.64,
+        470.737,
+        482.942,
+        490.383
+      ],
+      "y": [
+        -1.19,
+        -2.693,
+        -3.34,
+        4.138,
+        0.779,
+        "...",
+        1.633,
+        -0.067,
+        -1.052,
+        -4.783,
+        -3.651
+      ],
+      "z": [
+        -504.311,
+        -487.772,
+        -483.792,
+        -469.743,
+        -458.158,
+        "...",
+        -48.264,
+        -41.875,
+        -25.776,
+        -15.813,
+        -12.638
+      ],
+      "Curvature": [
+        -1.951,
+        4.13,
+        3.055,
+        4.277,
+        -3.894,
+        "...",
+        4.439,
+        -4.617,
+        2.442,
+        3.871,
+        4.827
+      ],
+      "Von Mises Stress": [
+        14.002,
+        16.848,
+        14.117,
+        19.388,
+        26.125,
+        "...",
+        178.556,
+        182.896,
+        193.336,
+        188.358,
+        191.432
+      ],
+      "Axial Force": [
+        45.19,
+        54.393,
+        58.305,
+        64.12,
+        74.275,
+        "...",
+        278.449,
+        284.438,
+        288.507,
+        290.412,
+        292.256
+      ],
+      "Seabed Normal Reaction": [
+        -2.7,
+        -1.666,
+        2.118,
+        2.582,
+        2.905,
+        "...",
+        2.551,
+        1.848,
+        4.785,
+        2.652,
+        4.187
+      ]
+    }
+  },
+  {
+    "stage_info": {
+      "stage_id": 2,
+      "name": "Shallow Water Lay",
+      "description": "Laying through shallow water section",
+      "vessel_position": 100.0,
+      "riser_length_deployed": 150.0,
+      "top_tension": 120.0,
+      "layback": 80.0,
+      "enabled": true
+    },
+    "code_checks": {
+      "tension": {
+        "max_tension_kN": 297.21,
+        "allowable_kN": 500.0,
+        "utilization": 0.5944,
+        "pass": true,
+        "critical_arc_length_m": 49.0
+      },
+      "compression": {
+        "min_tension_kN": 53.41,
+        "pass": true,
+        "note": "Compression not allowed during installation"
+      },
+      "bend_radius": {
+        "min_bend_radius_m": 0.21,
+        "allowable_m": 15.0,
+        "utilization": 72.57,
+        "pass": false
+      },
+      "von_mises": {
+        "max_von_mises_MPa": 193.34,
+        "allowable_MPa": 405.0,
+        "utilization": 0.4774,
+        "pass": true,
+        "critical_arc_length_m": 47.0
+      },
+      "hoop_stress": {
+        "hoop_stress_MPa": 88.14,
+        "allowable_MPa": 405.0,
+        "utilization": 0.2176,
+        "pass": true,
+        "formula": "Barlow's formula: \u03c3_h = P*(OD-WT)/(2*WT)"
+      },
+      "overall": {
+        "pass": false,
+        "status": "FAIL \u2717"
+      }
+    },
+    "submerged_weight": {
+      "steel_weight_kN_m": 1.8343,
+      "contents_weight_kN_m": 0.589,
+      "coating_weight_kN_m": 0.0065,
+      "buoyancy_kN_m": 0.8336,
+      "total_in_air_kN_m": 2.4298,
+      "submerged_weight_kN_m": 1.5962
+    },
+    "converged": true,
+    "results_sample": {
+      "ArcLength": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        "...",
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0
+      ],
+      "Effective Tension": [
+        53.414,
+        57.245,
+        56.07,
+        64.784,
+        71.93,
+        "...",
+        272.757,
+        281.331,
+        282.514,
+        287.911,
+        297.207
+      ],
+      "Bend Moment": [
+        -51.637,
+        -52.462,
+        -47.273,
+        -47.881,
+        -38.625,
+        "...",
+        37.238,
+        42.44,
+        40.841,
+        48.18,
+        52.551
+      ],
+      "Shear Force": [
+        -7.78,
+        -7.616,
+        -5.24,
+        -4.221,
+        -3.433,
+        "...",
+        7.573,
+        8.256,
+        5.597,
+        10.972,
+        11.986
+      ],
+      "x": [
+        0.727,
+        10.869,
+        18.244,
+        30.268,
+        37.024,
+        "...",
+        450.513,
+        459.64,
+        470.737,
+        482.942,
+        490.383
+      ],
+      "y": [
+        -1.19,
+        -2.693,
+        -3.34,
+        4.138,
+        0.779,
+        "...",
+        1.633,
+        -0.067,
+        -1.052,
+        -4.783,
+        -3.651
+      ],
+      "z": [
+        -504.311,
+        -487.772,
+        -483.792,
+        -469.743,
+        -458.158,
+        "...",
+        -48.264,
+        -41.875,
+        -25.776,
+        -15.813,
+        -12.638
+      ],
+      "Curvature": [
+        -1.951,
+        4.13,
+        3.055,
+        4.277,
+        -3.894,
+        "...",
+        4.439,
+        -4.617,
+        2.442,
+        3.871,
+        4.827
+      ],
+      "Von Mises Stress": [
+        14.002,
+        16.848,
+        14.117,
+        19.388,
+        26.125,
+        "...",
+        178.556,
+        182.896,
+        193.336,
+        188.358,
+        191.432
+      ],
+      "Axial Force": [
+        45.19,
+        54.393,
+        58.305,
+        64.12,
+        74.275,
+        "...",
+        278.449,
+        284.438,
+        288.507,
+        290.412,
+        292.256
+      ],
+      "Seabed Normal Reaction": [
+        -2.7,
+        -1.666,
+        2.118,
+        2.582,
+        2.905,
+        "...",
+        2.551,
+        1.848,
+        4.785,
+        2.652,
+        4.187
+      ]
+    }
+  },
+  {
+    "stage_info": {
+      "stage_id": 3,
+      "name": "Mid Water Lay",
+      "description": "Laying through mid-water section",
+      "vessel_position": 300.0,
+      "riser_length_deployed": 350.0,
+      "top_tension": 200.0,
+      "layback": 150.0,
+      "enabled": true
+    },
+    "code_checks": {
+      "tension": {
+        "max_tension_kN": 297.21,
+        "allowable_kN": 500.0,
+        "utilization": 0.5944,
+        "pass": true,
+        "critical_arc_length_m": 49.0
+      },
+      "compression": {
+        "min_tension_kN": 53.41,
+        "pass": true,
+        "note": "Compression not allowed during installation"
+      },
+      "bend_radius": {
+        "min_bend_radius_m": 0.21,
+        "allowable_m": 15.0,
+        "utilization": 72.57,
+        "pass": false
+      },
+      "von_mises": {
+        "max_von_mises_MPa": 193.34,
+        "allowable_MPa": 405.0,
+        "utilization": 0.4774,
+        "pass": true,
+        "critical_arc_length_m": 47.0
+      },
+      "hoop_stress": {
+        "hoop_stress_MPa": 88.14,
+        "allowable_MPa": 405.0,
+        "utilization": 0.2176,
+        "pass": true,
+        "formula": "Barlow's formula: \u03c3_h = P*(OD-WT)/(2*WT)"
+      },
+      "overall": {
+        "pass": false,
+        "status": "FAIL \u2717"
+      }
+    },
+    "submerged_weight": {
+      "steel_weight_kN_m": 1.8343,
+      "contents_weight_kN_m": 0.589,
+      "coating_weight_kN_m": 0.0065,
+      "buoyancy_kN_m": 0.8336,
+      "total_in_air_kN_m": 2.4298,
+      "submerged_weight_kN_m": 1.5962
+    },
+    "converged": true,
+    "results_sample": {
+      "ArcLength": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        "...",
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0
+      ],
+      "Effective Tension": [
+        53.414,
+        57.245,
+        56.07,
+        64.784,
+        71.93,
+        "...",
+        272.757,
+        281.331,
+        282.514,
+        287.911,
+        297.207
+      ],
+      "Bend Moment": [
+        -51.637,
+        -52.462,
+        -47.273,
+        -47.881,
+        -38.625,
+        "...",
+        37.238,
+        42.44,
+        40.841,
+        48.18,
+        52.551
+      ],
+      "Shear Force": [
+        -7.78,
+        -7.616,
+        -5.24,
+        -4.221,
+        -3.433,
+        "...",
+        7.573,
+        8.256,
+        5.597,
+        10.972,
+        11.986
+      ],
+      "x": [
+        0.727,
+        10.869,
+        18.244,
+        30.268,
+        37.024,
+        "...",
+        450.513,
+        459.64,
+        470.737,
+        482.942,
+        490.383
+      ],
+      "y": [
+        -1.19,
+        -2.693,
+        -3.34,
+        4.138,
+        0.779,
+        "...",
+        1.633,
+        -0.067,
+        -1.052,
+        -4.783,
+        -3.651
+      ],
+      "z": [
+        -504.311,
+        -487.772,
+        -483.792,
+        -469.743,
+        -458.158,
+        "...",
+        -48.264,
+        -41.875,
+        -25.776,
+        -15.813,
+        -12.638
+      ],
+      "Curvature": [
+        -1.951,
+        4.13,
+        3.055,
+        4.277,
+        -3.894,
+        "...",
+        4.439,
+        -4.617,
+        2.442,
+        3.871,
+        4.827
+      ],
+      "Von Mises Stress": [
+        14.002,
+        16.848,
+        14.117,
+        19.388,
+        26.125,
+        "...",
+        178.556,
+        182.896,
+        193.336,
+        188.358,
+        191.432
+      ],
+      "Axial Force": [
+        45.19,
+        54.393,
+        58.305,
+        64.12,
+        74.275,
+        "...",
+        278.449,
+        284.438,
+        288.507,
+        290.412,
+        292.256
+      ],
+      "Seabed Normal Reaction": [
+        -2.7,
+        -1.666,
+        2.118,
+        2.582,
+        2.905,
+        "...",
+        2.551,
+        1.848,
+        4.785,
+        2.652,
+        4.187
+      ]
+    }
+  },
+  {
+    "stage_info": {
+      "stage_id": 4,
+      "name": "Deep Water Lay",
+      "description": "Laying through deep water section",
+      "vessel_position": 450.0,
+      "riser_length_deployed": 500.0,
+      "top_tension": 280.0,
+      "layback": 200.0,
+      "enabled": true
+    },
+    "code_checks": {
+      "tension": {
+        "max_tension_kN": 297.21,
+        "allowable_kN": 500.0,
+        "utilization": 0.5944,
+        "pass": true,
+        "critical_arc_length_m": 49.0
+      },
+      "compression": {
+        "min_tension_kN": 53.41,
+        "pass": true,
+        "note": "Compression not allowed during installation"
+      },
+      "bend_radius": {
+        "min_bend_radius_m": 0.21,
+        "allowable_m": 15.0,
+        "utilization": 72.57,
+        "pass": false
+      },
+      "von_mises": {
+        "max_von_mises_MPa": 193.34,
+        "allowable_MPa": 405.0,
+        "utilization": 0.4774,
+        "pass": true,
+        "critical_arc_length_m": 47.0
+      },
+      "hoop_stress": {
+        "hoop_stress_MPa": 88.14,
+        "allowable_MPa": 405.0,
+        "utilization": 0.2176,
+        "pass": true,
+        "formula": "Barlow's formula: \u03c3_h = P*(OD-WT)/(2*WT)"
+      },
+      "overall": {
+        "pass": false,
+        "status": "FAIL \u2717"
+      }
+    },
+    "submerged_weight": {
+      "steel_weight_kN_m": 1.8343,
+      "contents_weight_kN_m": 0.589,
+      "coating_weight_kN_m": 0.0065,
+      "buoyancy_kN_m": 0.8336,
+      "total_in_air_kN_m": 2.4298,
+      "submerged_weight_kN_m": 1.5962
+    },
+    "converged": true,
+    "results_sample": {
+      "ArcLength": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        "...",
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0
+      ],
+      "Effective Tension": [
+        53.414,
+        57.245,
+        56.07,
+        64.784,
+        71.93,
+        "...",
+        272.757,
+        281.331,
+        282.514,
+        287.911,
+        297.207
+      ],
+      "Bend Moment": [
+        -51.637,
+        -52.462,
+        -47.273,
+        -47.881,
+        -38.625,
+        "...",
+        37.238,
+        42.44,
+        40.841,
+        48.18,
+        52.551
+      ],
+      "Shear Force": [
+        -7.78,
+        -7.616,
+        -5.24,
+        -4.221,
+        -3.433,
+        "...",
+        7.573,
+        8.256,
+        5.597,
+        10.972,
+        11.986
+      ],
+      "x": [
+        0.727,
+        10.869,
+        18.244,
+        30.268,
+        37.024,
+        "...",
+        450.513,
+        459.64,
+        470.737,
+        482.942,
+        490.383
+      ],
+      "y": [
+        -1.19,
+        -2.693,
+        -3.34,
+        4.138,
+        0.779,
+        "...",
+        1.633,
+        -0.067,
+        -1.052,
+        -4.783,
+        -3.651
+      ],
+      "z": [
+        -504.311,
+        -487.772,
+        -483.792,
+        -469.743,
+        -458.158,
+        "...",
+        -48.264,
+        -41.875,
+        -25.776,
+        -15.813,
+        -12.638
+      ],
+      "Curvature": [
+        -1.951,
+        4.13,
+        3.055,
+        4.277,
+        -3.894,
+        "...",
+        4.439,
+        -4.617,
+        2.442,
+        3.871,
+        4.827
+      ],
+      "Von Mises Stress": [
+        14.002,
+        16.848,
+        14.117,
+        19.388,
+        26.125,
+        "...",
+        178.556,
+        182.896,
+        193.336,
+        188.358,
+        191.432
+      ],
+      "Axial Force": [
+        45.19,
+        54.393,
+        58.305,
+        64.12,
+        74.275,
+        "...",
+        278.449,
+        284.438,
+        288.507,
+        290.412,
+        292.256
+      ],
+      "Seabed Normal Reaction": [
+        -2.7,
+        -1.666,
+        2.118,
+        2.582,
+        2.905,
+        "...",
+        2.551,
+        1.848,
+        4.785,
+        2.652,
+        4.187
+      ]
+    }
+  },
+  {
+    "stage_info": {
+      "stage_id": 5,
+      "name": "Touchdown",
+      "description": "Riser touches down on seabed",
+      "vessel_position": 500.0,
+      "riser_length_deployed": 520.0,
+      "top_tension": 300.0,
+      "layback": 220.0,
+      "enabled": true
+    },
+    "code_checks": {
+      "tension": {
+        "max_tension_kN": 297.21,
+        "allowable_kN": 500.0,
+        "utilization": 0.5944,
+        "pass": true,
+        "critical_arc_length_m": 49.0
+      },
+      "compression": {
+        "min_tension_kN": 53.41,
+        "pass": true,
+        "note": "Compression not allowed during installation"
+      },
+      "bend_radius": {
+        "min_bend_radius_m": 0.21,
+        "allowable_m": 15.0,
+        "utilization": 72.57,
+        "pass": false
+      },
+      "von_mises": {
+        "max_von_mises_MPa": 193.34,
+        "allowable_MPa": 405.0,
+        "utilization": 0.4774,
+        "pass": true,
+        "critical_arc_length_m": 47.0
+      },
+      "hoop_stress": {
+        "hoop_stress_MPa": 88.14,
+        "allowable_MPa": 405.0,
+        "utilization": 0.2176,
+        "pass": true,
+        "formula": "Barlow's formula: \u03c3_h = P*(OD-WT)/(2*WT)"
+      },
+      "overall": {
+        "pass": false,
+        "status": "FAIL \u2717"
+      }
+    },
+    "submerged_weight": {
+      "steel_weight_kN_m": 1.8343,
+      "contents_weight_kN_m": 0.589,
+      "coating_weight_kN_m": 0.0065,
+      "buoyancy_kN_m": 0.8336,
+      "total_in_air_kN_m": 2.4298,
+      "submerged_weight_kN_m": 1.5962
+    },
+    "converged": true,
+    "results_sample": {
+      "ArcLength": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        "...",
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0
+      ],
+      "Effective Tension": [
+        53.414,
+        57.245,
+        56.07,
+        64.784,
+        71.93,
+        "...",
+        272.757,
+        281.331,
+        282.514,
+        287.911,
+        297.207
+      ],
+      "Bend Moment": [
+        -51.637,
+        -52.462,
+        -47.273,
+        -47.881,
+        -38.625,
+        "...",
+        37.238,
+        42.44,
+        40.841,
+        48.18,
+        52.551
+      ],
+      "Shear Force": [
+        -7.78,
+        -7.616,
+        -5.24,
+        -4.221,
+        -3.433,
+        "...",
+        7.573,
+        8.256,
+        5.597,
+        10.972,
+        11.986
+      ],
+      "x": [
+        0.727,
+        10.869,
+        18.244,
+        30.268,
+        37.024,
+        "...",
+        450.513,
+        459.64,
+        470.737,
+        482.942,
+        490.383
+      ],
+      "y": [
+        -1.19,
+        -2.693,
+        -3.34,
+        4.138,
+        0.779,
+        "...",
+        1.633,
+        -0.067,
+        -1.052,
+        -4.783,
+        -3.651
+      ],
+      "z": [
+        -504.311,
+        -487.772,
+        -483.792,
+        -469.743,
+        -458.158,
+        "...",
+        -48.264,
+        -41.875,
+        -25.776,
+        -15.813,
+        -12.638
+      ],
+      "Curvature": [
+        -1.951,
+        4.13,
+        3.055,
+        4.277,
+        -3.894,
+        "...",
+        4.439,
+        -4.617,
+        2.442,
+        3.871,
+        4.827
+      ],
+      "Von Mises Stress": [
+        14.002,
+        16.848,
+        14.117,
+        19.388,
+        26.125,
+        "...",
+        178.556,
+        182.896,
+        193.336,
+        188.358,
+        191.432
+      ],
+      "Axial Force": [
+        45.19,
+        54.393,
+        58.305,
+        64.12,
+        74.275,
+        "...",
+        278.449,
+        284.438,
+        288.507,
+        290.412,
+        292.256
+      ],
+      "Seabed Normal Reaction": [
+        -2.7,
+        -1.666,
+        2.118,
+        2.582,
+        2.905,
+        "...",
+        2.551,
+        1.848,
+        4.785,
+        2.652,
+        4.187
+      ]
+    }
+  },
+  {
+    "stage_info": {
+      "stage_id": 6,
+      "name": "Pull-in",
+      "description": "Final pull-in to subsea structure",
+      "vessel_position": 510.0,
+      "riser_length_deployed": 530.0,
+      "top_tension": 350.0,
+      "layback": 230.0,
+      "enabled": true
+    },
+    "code_checks": {
+      "tension": {
+        "max_tension_kN": 297.21,
+        "allowable_kN": 500.0,
+        "utilization": 0.5944,
+        "pass": true,
+        "critical_arc_length_m": 49.0
+      },
+      "compression": {
+        "min_tension_kN": 53.41,
+        "pass": true,
+        "note": "Compression not allowed during installation"
+      },
+      "bend_radius": {
+        "min_bend_radius_m": 0.21,
+        "allowable_m": 15.0,
+        "utilization": 72.57,
+        "pass": false
+      },
+      "von_mises": {
+        "max_von_mises_MPa": 193.34,
+        "allowable_MPa": 405.0,
+        "utilization": 0.4774,
+        "pass": true,
+        "critical_arc_length_m": 47.0
+      },
+      "hoop_stress": {
+        "hoop_stress_MPa": 88.14,
+        "allowable_MPa": 405.0,
+        "utilization": 0.2176,
+        "pass": true,
+        "formula": "Barlow's formula: \u03c3_h = P*(OD-WT)/(2*WT)"
+      },
+      "overall": {
+        "pass": false,
+        "status": "FAIL \u2717"
+      }
+    },
+    "submerged_weight": {
+      "steel_weight_kN_m": 1.8343,
+      "contents_weight_kN_m": 0.589,
+      "coating_weight_kN_m": 0.0065,
+      "buoyancy_kN_m": 0.8336,
+      "total_in_air_kN_m": 2.4298,
+      "submerged_weight_kN_m": 1.5962
+    },
+    "converged": true,
+    "results_sample": {
+      "ArcLength": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        "...",
+        45.0,
+        46.0,
+        47.0,
+        48.0,
+        49.0
+      ],
+      "Effective Tension": [
+        53.414,
+        57.245,
+        56.07,
+        64.784,
+        71.93,
+        "...",
+        272.757,
+        281.331,
+        282.514,
+        287.911,
+        297.207
+      ],
+      "Bend Moment": [
+        -51.637,
+        -52.462,
+        -47.273,
+        -47.881,
+        -38.625,
+        "...",
+        37.238,
+        42.44,
+        40.841,
+        48.18,
+        52.551
+      ],
+      "Shear Force": [
+        -7.78,
+        -7.616,
+        -5.24,
+        -4.221,
+        -3.433,
+        "...",
+        7.573,
+        8.256,
+        5.597,
+        10.972,
+        11.986
+      ],
+      "x": [
+        0.727,
+        10.869,
+        18.244,
+        30.268,
+        37.024,
+        "...",
+        450.513,
+        459.64,
+        470.737,
+        482.942,
+        490.383
+      ],
+      "y": [
+        -1.19,
+        -2.693,
+        -3.34,
+        4.138,
+        0.779,
+        "...",
+        1.633,
+        -0.067,
+        -1.052,
+        -4.783,
+        -3.651
+      ],
+      "z": [
+        -504.311,
+        -487.772,
+        -483.792,
+        -469.743,
+        -458.158,
+        "...",
+        -48.264,
+        -41.875,
+        -25.776,
+        -15.813,
+        -12.638
+      ],
+      "Curvature": [
+        -1.951,
+        4.13,
+        3.055,
+        4.277,
+        -3.894,
+        "...",
+        4.439,
+        -4.617,
+        2.442,
+        3.871,
+        4.827
+      ],
+      "Von Mises Stress": [
+        14.002,
+        16.848,
+        14.117,
+        19.388,
+        26.125,
+        "...",
+        178.556,
+        182.896,
+        193.336,
+        188.358,
+        191.432
+      ],
+      "Axial Force": [
+        45.19,
+        54.393,
+        58.305,
+        64.12,
+        74.275,
+        "...",
+        278.449,
+        284.438,
+        288.507,
+        290.412,
+        292.256
+      ],
+      "Seabed Normal Reaction": [
+        -2.7,
+        -1.666,
+        2.118,
+        2.582,
+        2.905,
+        "...",
+        2.551,
+        1.848,
+        4.785,
+        2.652,
+        4.187
+      ]
+    }
+  }
+]
