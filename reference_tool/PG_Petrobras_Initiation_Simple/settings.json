@@ -1,0 +1,45 @@
+{
+    "input_file": "input_data.json",
+    "analysis_folder": "analysis",
+    "vessel": "7Vega",
+    "draught": "22-Empty-ART-ShipMo-Hs250",
+    "base_model": null,
+    "orcaflex_dll": null,
+    "debug": false,
+
+    "statics": {
+        "contents_density": null,
+        "include_current": false,
+        "brake_mode": false,
+        "use_rollerbox": false,
+        "rollerbox_openings_mm": [755],
+
+        "full_sequence": {
+            "landing_ramp_angle": 85.6,
+            "max_payout_m": null,
+            "upfront_ramp_check": true,
+            "auto_select_ramp_angle": false
+        },
+
+        "critical_step": {
+            "ramp_angle_range": [76.1, 85.6],
+            "clearance_target_m": 10.0,
+            "buoyancy_tolerance_te": 0.0,
+            "wire_length_tolerance_m": 0.0,
+            "cores": 4
+        }
+    },
+
+    "criteria": {
+        "Hang-Off LCC": 0.7,
+        "Sag Bend LCC": 0.7,
+        "Structure Interface LCC": 0.7,
+        "Strain (%)": 0.15,
+        "Top Tension (Te)": 600.0,
+        "Bollard Pull (Te)": 50.0,
+        "Rollerbox Load (Te)": null,
+        "Layback (m)": 1200.0,
+        "Target Box Static Utilisation (%)": 70.0,
+        "Wire Tension (Te)": 150.0
+    }
+}

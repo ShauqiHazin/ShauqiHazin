@@ -1,0 +1,453 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Petrobras Initiation Data Schema",
+    "type": "object",
+    "required": [
+        "general",
+        "environment",
+        "lineTypes",
+        "variableOD",
+        "wireType",
+        "variableStiffness",
+        "lineData",
+        "structureData",
+        "sipData",
+        "buoyancyData",
+        "codeChecksData"
+    ],
+    "properties": {
+        "general": {
+            "type": "object",
+            "properties": {
+                "client": { "type": "string" },
+                "project": { "type": "string" },
+                "pipeline": { "type": "string" },
+                "revision": { "type": "string" },
+                "jobName": { "type": "string" },
+                "comments": { "type": "string" }
+            },
+            "required": ["client", "project", "pipeline", "revision", "jobName", "comments"]
+        },
+        "environment": {
+            "type": "object",
+            "properties": {
+                "seabedProfile": {
+                    "type": "object",
+                    "properties": {
+                        "distanceFromOrigin": { "type": "array", "items": { "type": "number" } },
+                        "depth": { "type": "array", "items": { "type": "number" } }
+                    },
+                    "required": ["distanceFromOrigin", "depth"]
+                },
+                "seabedType": { "type": "string" },
+                "seabedOrigin": { "type": "number" },
+                "waterDepth": { "type": "number" },
+                "seaWaterDensity" : { "type": "number" },
+                "currentProfile": {
+                    "type": "object",
+                    "properties": {
+                        "waterDepth": { "type": "array", "items": { "type": "number" } },
+                        "currentSpeed": { "type": "array", "items": { "type": "number" } }
+                    },
+                    "required": ["waterDepth", "currentSpeed"]
+                },
+                "seabedStiffness": { "type": "number" }
+            },
+            "required": ["seabedProfile", "seabedType", "seabedOrigin", "waterDepth", "seaWaterDensity", "currentProfile", "seabedStiffness"]
+        },
+        "lineTypes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "lineTypeName": { "type": "string" },
+                    "outerDiameter": { "type": ["number", "string"] },
+                    "innerDiameter": { "type": "number" },
+                    "wallThickness": { "type": "number" },
+                    "materialDensity": { "type": "number" },
+                    "coatingThickness": { "type": "number" },
+                    "coatingDensity": { "type": "number" },
+                    "liningThickness": { "type": "number" },
+                    "liningDensity": { "type": "number" },
+                    "E": { "type": "number" },
+                    "cax": { "type": "number" },
+                    "cdx": { "type": "number" },
+                    "axialFriction": { "type": "number" },
+                    "normalFriction": { "type": "number" },
+                    "materialType": { "type": "string" },
+                    "roParams": {
+                        "type": ["object", "null"],
+                        "properties": {
+                            "E": { "type": "number"},
+                            "refStress": { "type": "number"},
+                            "K": { "type": "number"},
+                            "n": { "type": "number"}
+                        }
+                    },                    
+                    "stressStrain": {
+                        "type": ["object", "null"],
+                        "properties": {
+                            "strain": { "type": "array", "items": { "type": "number" } },
+                            "stress": { "type": "array", "items": { "type": "number" } }
+                        }
+                    }
+                },
+                "required": ["lineTypeName", "outerDiameter", "innerDiameter", "wallThickness", "materialDensity", "coatingThickness", "coatingDensity", "liningThickness", "liningDensity", "E", "cax", "cdx", "axialFriction", "normalFriction", "materialType"]
+            }
+        },
+        "variableOD": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "profileName": { "type": "string" },
+                    "profile": {
+                        "type": "object",
+                        "properties": {
+                            "arcLength": { "type": "array", "items": { "type": "number" } },
+                            "diameter": { "type": "array", "items": { "type": "number" } }
+                        },
+                        "required": ["arcLength", "diameter"]
+                    }
+                },
+                "required": ["profileName", "profile"]
+            }
+        },
+        "wireType": {
+            "type": "object",
+            "properties": {
+                "wireLength": { "type": "number" },
+                "wireOuterDiameter": { "type": "number" },
+                "wireWeightInAir": { "type": "number" },
+                "wireWeightInWater": { "type": "number" },
+                "wireAxialStiffnessName": { "type": "string" },
+                "wireAxialStiffness": {
+                    "type": "object",
+                    "properties": {
+                        "strain": { "type": "array", "items": { "type": "number" } },
+                        "wallTension": { "type": "array", "items": { "type": "number" } }
+                    },
+                    "required": ["strain", "wallTension"]
+                },
+                "fittings": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": { "type": "string" },
+                            "mass": { "type": "number" },
+                            "wiw": { "type": "number" },
+                            "volume": { "type": "number" },
+                            "length": { "type": "number" }
+                        },
+                        "required": ["name", "mass", "wiw", "volume", "length"]
+                    }
+                },
+                "makeUpRigging": {
+                    "type": "object",
+                    "properties": {
+                        "pletSide": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "fitting": { "type": "string" },
+                                    "quantity": { "type": "integer" }
+                                },
+                                "required": ["fitting", "quantity"]
+                            }
+                        },
+                        "sipSide": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "fitting": { "type": "string" },
+                                    "quantity": { "type": "integer" }
+                                },
+                                "required": ["fitting", "quantity"]
+                            }
+                        }
+                    },
+                    "required": ["pletSide", "sipSide"]
+                }
+            },
+            "required": ["wireLength", "wireOuterDiameter", "wireWeightInAir", "wireWeightInWater", "wireAxialStiffnessName", "wireAxialStiffness", "fittings", "makeUpRigging"]
+        },
+        "variableStiffness": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "profileName": { "type": "string" },
+                    "profile": {
+                        "type": "object",
+                        "properties": {
+                            "strain": { "type": "array", "items": { "type": "number" } },
+                            "wallTension": { "type": "array", "items": { "type": "number" } }
+                        },
+                        "required": ["strain", "wallTension"]
+                    }
+                },
+                "required": ["profileName", "profile"]
+            }
+        },
+        "lineData": {
+            "type": "object",
+            "properties": {
+                "lineName": { "type": "string" },
+                "numberOfLineSegments": { "type": "integer" },
+                "lineSegments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "sectionLineType": { "type": "string" },
+                            "sectionLength": { "type": "number" }
+                        },
+                        "required": ["sectionLineType", "sectionLength"]
+                    }
+                },
+                "totalLength": { "type": "number" }
+            },
+            "required": ["lineName", "numberOfLineSegments", "lineSegments", "totalLength"]
+        },
+        "structureData": {
+            "type": "object",
+            "properties": {
+                "weightInAir": { "type": "number" },
+                "weightInWater": { "type": "number" },
+                "length": { "type": "number" },
+                "width": { "type": "number" },
+                "height": { "type": "number" },
+                "cogX": { "type": "number" },
+                "cogY": { "type": "number" },
+                "cogZ": { "type": "number" },
+                "trunnions": {
+                    "type": "object",
+                    "properties": {
+                        "primary": {
+                            "type": "object",
+                            "properties": {
+                                "length": { "type": "number" },
+                                "contactDiameter": { "type": "number" },
+                                "xCoordinate": { "type": "number" },
+                                "yCoordinate": { "type": "number" },
+                                "zCoordinate": { "type": "number" }
+                            },
+                            "required": ["length", "contactDiameter", "xCoordinate", "yCoordinate", "zCoordinate"]
+                        },
+                        "secondary": {
+                            "type": "object",
+                            "properties": {
+                                "length": { "type": "number" },
+                                "contactDiameter": { "type": "number" },
+                                "xCoordinate": { "type": "number" },
+                                "yCoordinate": { "type": "number" },
+                                "zCoordinate": { "type": "number" }
+                            },
+                            "required": ["length", "contactDiameter", "xCoordinate", "yCoordinate", "zCoordinate"]
+                        }
+                    },
+                    "required": ["primary", "secondary"]
+                },
+                "perforation": {
+                    "type": "object",
+                    "properties": {
+                        "x": { "type": "number" },
+                        "y": { "type": "number" },
+                        "z": { "type": "number" }
+                    },
+                    "required": ["x", "y", "z"]
+                },
+                "hydrodynamics": {
+                    "type": "object",
+                    "properties": {
+                        "volume": { "type": "number" },
+                        "Ix": { "type": "number" },
+                        "Iy": { "type": "number" },
+                        "Iz": { "type": "number" },
+                        "dragAreaX": { "type": "number" },
+                        "dragAreaY": { "type": "number" },
+                        "dragAreaZ": { "type": "number" },
+                        "cdX": { "type": "number" },
+                        "cdY": { "type": "number" },
+                        "cdZ": { "type": "number" },
+                        "caX": { "type": "number" },
+                        "caY": { "type": "number" },
+                        "caZ": { "type": "number" }
+                    },
+                    "required": ["volume", "Ix", "Iy", "Iz", "dragAreaX", "dragAreaY", "dragAreaZ", "cdX", "cdY", "cdZ", "caX", "caY", "caZ"]
+                },
+                "connectionPoints": {
+                    "type": "object",
+                    "properties": {
+                        "pipeConnection": {
+                            "type": "object",
+                            "properties": {
+                                "x": { "type": "number" },
+                                "y": { "type": "number" },
+                                "z": { "type": "number" }
+                            },
+                            "required": ["x", "y", "z"]
+                        },
+                        "padeyeConnection": {
+                            "type": "object",
+                            "properties": {
+                                "x": { "type": "number" },
+                                "y": { "type": "number" },
+                                "z": { "type": "number" }
+                            },
+                            "required": ["x", "y", "z"]
+                        },
+                        "yokeConnection": {
+                            "type": "object",
+                            "properties": {
+                                "x": { "type": "number" },
+                                "y": { "type": "number" },
+                                "z": { "type": "number" }
+                            },
+                            "required": ["x", "y", "z"]
+                        }
+                    },
+                    "required": ["pipeConnection", "padeyeConnection", "yokeConnection"]
+                }
+            },
+            "required": ["weightInAir", "weightInWater", "length", "width", "height", "cogX", "cogY", "cogZ", "trunnions", "perforation", "hydrodynamics", "connectionPoints"]
+        },
+        "sipData": {
+            "type": "object",
+            "properties": {
+                "pileDiameter": { "type": "number" },
+                "hookDistance": { "type": "number" },
+                "hookElevation": { "type": "number" },
+                "receptacleFrontWallDistance": { "type": "number" },
+                "receptacleBackWallDistance": { "type": "number" },
+                "receptacleWidth": { "type": "number" },
+                "receptacleSpacing": { "type": "number" },
+                "receptacleHeight": { "type": "number" }
+            },
+            "required": ["pileDiameter", "hookDistance", "hookElevation", "receptacleFrontWallDistance", "receptacleBackWallDistance", "receptacleWidth", "receptacleSpacing", "receptacleHeight"]
+        },
+        "buoyancyData": {
+            "type": "object",
+            "properties": {
+                "connectionData": {
+                    "type": "object",
+                    "properties": {
+                        "yokeLength": { "type": "number" },
+                        "yokeWIA": { "type": "number" },
+                        "yokeWIW": { "type": "number" }
+                    },
+                    "required": ["yokeLength", "yokeWIA", "yokeWIW"]
+                },
+                "moduleData": {
+                    "type": "object",
+                    "properties": {
+                        "moduleWIA": { "type": "number" },
+                        "moduleWIW": { "type": "number" },
+                        "moduleVolume": { "type": "number" },
+                        "moduleLength": { "type": "number" },
+                        "moduleWidth": { "type": "number" },
+                        "moduleHeight": { "type": "number" },
+                        "riggingLength": { "type": "number" },
+                        "riggingAxialStiffness": { "type": "number" },                        
+						"hydrodynamics": {
+                            "type": "object",
+                            "properties": {
+								"dragAreaX" : { "type": "number" },
+								"dragAreaY" : { "type": "number" },
+								"dragAreaZ" : { "type": "number" },
+								"cdX" : { "type": "number" },
+								"cdY" : { "type": "number" },
+								"cdZ" : { "type": "number" },
+								"caX" : { "type": "number" },
+								"caY" : { "type": "number" },
+								"caZ" : { "type": "number" }
+                            },
+                            "required": ["dragAreaX", "dragAreaY", "dragAreaZ", "cdX", "cdY", "cdZ", "caX", "caY", "caZ"]
+                        }
+						
+                    },
+                    "required": ["moduleWIA", "moduleWIW", "moduleVolume", "moduleLength", "moduleWidth", "moduleHeight", "riggingLength", "riggingAxialStiffness", "hydrodynamics"]
+                }
+            },
+            "required": ["connectionData", "moduleData"]
+        },
+        "codeChecksData": {
+            "type": "object",
+            "properties": {
+                "f101": {
+                    "type": "object",
+                    "properties": {
+                        "gamma_c": { "type": "number" },
+                        "gamma_f": {
+                            "type": "object",
+                            "properties": {
+                                "a": { "type": "number" },
+                                "b": { "type": "number" }
+                            },
+                            "required": ["a", "b"]
+                        },
+                        "gamma_e": {
+                            "type": "object",
+                            "properties": {
+                                "a": { "type": "number" },
+                                "b": { "type": "number" }
+                            },
+                            "required": ["a", "b"]
+                        },
+                        "lineTypeFactor": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": { "type": "string" },
+                                    "gamma_sc_lb": { "type": "number" },
+                                    "gamma_m": { "type": "number" },
+                                    "alpha_fab": { "type": "number" },
+                                    "alpha_gw": { "type": "number" },
+                                    "alpha_pm": { "type": "number" }
+                                },
+                                "required": ["name", "gamma_sc_lb", "gamma_m", "alpha_fab", "alpha_gw", "alpha_pm"]
+                            }
+                        },
+                        "lineTypeProperties": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": { "type": "string" },
+                                    "pMin": { "type": "string" },
+                                    "t2": { "type": "string" },
+                                    "fy": { "type": "number" },
+                                    "fu": { "type": "number" },
+                                    "E": { "type": "number" },
+                                    "alpha_h": { "type": "number" },
+                                    "f0": { "type": "number" },
+                                    "simplifiedStrainLimit": { "type": "number" }
+                                },
+                                "required": ["name", "pMin", "t2", "fy", "fu", "E", "alpha_h", "f0", "simplifiedStrainLimit"]
+                            }
+                        },
+                        "craProperties": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": { "type": "string" },
+                                    "tCRA": { "type": "number" },
+                                    "fyCRA": { "type": "number" },
+                                    "fuCRA": { "type": "number" }
+                                },
+                                "required": ["name", "tCRA", "fyCRA", "fuCRA"]
+                            }
+                        }
+                    },
+                    "required": ["gamma_c", "gamma_f", "gamma_e", "lineTypeFactor", "lineTypeProperties", "craProperties"]
+                }
+            },
+            "required": ["f101"]
+        }
+    }
+}

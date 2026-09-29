@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1512" height="1946" viewBox="0 0 1512 1946">
+<rect width="1512" height="1946" fill="#FFFFFF"/>
+<text x="40" y="48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#12263F">PG Petrobras Initiation (Simple) - tool flowchart</text>
+<text x="40" y="72" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#52606D">run.bat &lt;command&gt;   |   inputs: input_data.json + settings.json   |   all outputs go to analysis_folder</text>
+<rect x="269.25" y="106" width="716.5" height="401.59999999999997" rx="10" fill="#F7F9FC" stroke="#B8C7DC" stroke-dasharray="5 4"/>
+<text x="279.25" y="123" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#3E4C59">1. BUILD   (run.bat build)</text>
+<rect x="22.5" y="562.0" width="716.5" height="1136.0" rx="10" fill="#F5FAF6" stroke="#9CC5A8" stroke-dasharray="5 4"/>
+<text x="32.5" y="579.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#3E4C59">2a. FULL SEQUENCE   (run.bat full)</text>
+<rect x="762.75" y="562.0" width="669.5" height="540.8000000000002" rx="10" fill="#FBF7F0" stroke="#D9C39A" stroke-dasharray="5 4"/>
+<text x="772.75" y="579.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#3E4C59">2b. CRITICAL STEP   (run.bat critical)</text>
+<rect x="433.75" y="1704.3999999999999" width="869.25" height="161.60000000000014" rx="10" fill="#F6F3FA" stroke="#BFA9DA" stroke-dasharray="5 4"/>
+<text x="443.75" y="1721.3999999999999" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#3E4C59">3. POST-PROCESS   (run.bat results / snapshots)</text>
+<path d="M627.5,194.2 L627.5,210.6" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="627.5,219.6 623.0,210.6 632.0,210.6" fill="#444"/>
+<path d="M627.5,298.1 L627.5,306.5" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="627.5,315.5 623.0,306.5 632.0,306.5" fill="#444"/>
+<path d="M627.5,394.0 L627.5,413.8" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="627.5,422.8 623.0,413.8 632.0,413.8" fill="#444"/>
+<path d="M792.5,450.8 L960.0,450.8" fill="none" stroke="#444" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polygon points="969.0,450.8 960.0,455.3 960.0,446.3" fill="#444"/>
+<path d="M627.5,478.8 L627.5,524.2" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="627.5,533.2 623.0,524.2 632.0,524.2" fill="#444"/>
+<path d="M542.5,561.2 L392.5,561.2 L392.5,628.2" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,637.2 388.0,628.2 397.0,628.2" fill="#444"/>
+<path d="M712.5,561.2 L1097.5,561.2 L1097.5,636.0" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="1097.5,645.0 1093.0,636.0 1102.0,636.0" fill="#444"/>
+<path d="M392.5,715.7 L392.5,741.6" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,750.6 388.0,741.6 397.0,741.6" fill="#444"/>
+<path d="M392.5,813.4 L392.5,841.9" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,850.9 388.0,841.9 397.0,841.9" fill="#444"/>
+<path d="M392.5,924.3 L392.5,946.7" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,955.7 388.0,946.7 397.0,946.7" fill="#444"/>
+<path d="M475.0,887.6 L526.0,887.6 L526.0,1233.2 L509.0,1233.2" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="500.0,1233.2 509.0,1228.7 509.0,1237.7" fill="#444"/>
+<path d="M392.5,1049.9 L392.5,1081.0" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,1090.0 388.0,1081.0 397.0,1081.0" fill="#444"/>
+<path d="M392.5,1146.0 L392.5,1192.8" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,1201.8 388.0,1192.8 397.0,1192.8" fill="#444"/>
+<path d="M317.5,1118.0 L251.5,1118.0" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="242.5,1118.0 251.5,1113.5 251.5,1122.5" fill="#444"/>
+<path d="M157.5,1154.7 L157.5,1192.8" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="157.5,1201.8 153.0,1192.8 162.0,1192.8" fill="#444"/>
+<path d="M72.5,1118.0 L39.0,1118.0 L39.0,1358.0 L56.0,1358.0" fill="none" stroke="#C0392B" stroke-width="1.5"/>
+<polygon points="65.0,1358.0 56.0,1362.5 56.0,1353.5" fill="#C0392B"/>
+<path d="M250.0,1233.2 L276.0,1233.2" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="285.0,1233.2 276.0,1237.7 276.0,1228.7" fill="#444"/>
+<path d="M157.5,1264.6 L157.5,1317.6" fill="none" stroke="#C0392B" stroke-width="1.5"/>
+<polygon points="157.5,1326.6 153.0,1317.6 162.0,1317.6" fill="#C0392B"/>
+<path d="M392.5,1264.6 L392.5,1282.7" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,1291.7 388.0,1282.7 397.0,1282.7" fill="#444"/>
+<path d="M392.5,1385.9 L392.5,1396.2" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,1405.2 388.0,1396.2 397.0,1396.2" fill="#444"/>
+<path d="M392.5,1483.7 L392.5,1509.6" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,1518.6 388.0,1509.6 397.0,1509.6" fill="#444"/>
+<path d="M392.5,1581.4 L392.5,1609.0" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="392.5,1618.0 388.0,1609.0 397.0,1609.0" fill="#444"/>
+<path d="M1097.5,707.8 L1097.5,743.3" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="1097.5,752.3 1093.0,743.3 1102.0,743.3" fill="#444"/>
+<path d="M1097.5,830.8 L1097.5,852.5" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="1097.5,861.5 1093.0,852.5 1102.0,852.5" fill="#444"/>
+<path d="M1097.5,971.3 L1097.5,1009.0" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="1097.5,1018.0 1093.0,1009.0 1102.0,1009.0" fill="#444"/>
+<path d="M392.5,1674.0 L392.5,1746.8 L627.5,1746.8 L627.5,1768.8" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="627.5,1777.8 623.0,1768.8 632.0,1768.8" fill="#444"/>
+<path d="M1097.5,1074.0 L1097.5,1746.8 L627.5,1746.8 L627.5,1768.8" fill="none" stroke="#444" stroke-width="1.5"/>
+<polygon points="627.5,1777.8 623.0,1768.8 632.0,1768.8" fill="#444"/>
+<path d="M787.5,1809.2 L939.8,1809.2" fill="none" stroke="#444" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polygon points="948.8,1809.2 939.8,1813.7 939.8,1804.7" fill="#444"/>
+<polygon points="486.5,131.3625 782.5,131.3625 768.5,194.2375 472.5,194.2375" fill="#F3ECFA" stroke="#7B4FB0" stroke-width="1.6"/>
+<text x="627.5" y="151.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">input_data.json (project data)</text><text x="627.5" y="167.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">settings.json (vessel, draught, options,</text><text x="627.5" y="182.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">criteria)</text>
+<rect x="447.5" y="219.55" width="360" height="78.5" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="627.5" y="239.7" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Load + validate against schema. Prepare: PLET &amp;</text><text x="627.5" y="255.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">buoyancy hydrodynamics, fitting volumes,</text><text x="627.5" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">variable-OD lengths, code-check defaults,</text><text x="627.5" y="286.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">pipe-length warning</text>
+<rect x="427.5" y="315.54999999999995" width="400" height="78.5" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="627.5" y="335.7" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">generate_base_model(): vessel template, environment,</text><text x="627.5" y="351.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">line types, pipe, bungee wire, trunnions, PLET 6D buoy,</text><text x="627.5" y="367.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">buoyancy, SIP shapes, rigging, DNV F101, connections,</text><text x="627.5" y="382.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">vessel position &amp; draught</text>
+<path d="M462.5,422.79999999999995 L780.5,422.79999999999995 L792.5,434.79999999999995 L792.5,478.79999999999995 L462.5,478.79999999999995 Z" fill="#F4F4F4" stroke="#666666" stroke-width="1.4"/>
+<text x="627.5" y="447.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">&lt;Project&gt;_&lt;Pipe&gt;_&lt;Vessel&gt;_Base_RevX.dat +</text><text x="627.5" y="463.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">output_data_&lt;date&gt;.json</text>
+<rect x="969.0" y="419.36249999999995" width="210" height="62.875" rx="2" fill="#FFF9C4" stroke="#C9B200" stroke-width="1.4"/>
+<text x="1074.0" y="439.5" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">User: open the model, check</text><text x="1074.0" y="455.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">it and optimise element</text><text x="1074.0" y="470.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">lengths</text>
+<polygon points="627.5,533.2 712.5,561.2 627.5,589.2 542.5,561.2" fill="#FFF6DD" stroke="#C08A00" stroke-width="1.6"/>
+<text x="627.5" y="565.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Analysis type?</text>
+<rect x="285.0" y="637.1500000000001" width="215" height="78.5" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="392.5" y="657.3" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">load_context(): water depth,</text><text x="392.5" y="673.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">pipe length, buoyancy, wire,</text><text x="392.5" y="688.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">vessel (read from model</text><text x="392.5" y="704.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">comments); copy base model</text>
+<rect x="285.0" y="750.5625" width="215" height="62.875" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="392.5" y="770.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">check_length(): estimated</text><text x="392.5" y="786.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">catenary x 0.95 &lt;= pipe</text><text x="392.5" y="802.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">length?</text>
+<polygon points="392.5,850.9124999999999 475.0,887.5999999999999 392.5,924.2874999999999 310.0,887.5999999999999" fill="#FFF6DD" stroke="#C08A00" stroke-width="1.6"/>
+<text x="392.5" y="884.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Upfront ramp</text><text x="392.5" y="899.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">check?</text>
+<rect x="285.0" y="955.7375000000001" width="215" height="94.125" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="392.5" y="975.9" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">generate_landing_step():</text><text x="392.5" y="991.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">solve step 316 (secondary</text><text x="392.5" y="1007.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">trunnion on receptacle),</text><text x="392.5" y="1022.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">post-process, compare with</text><text x="392.5" y="1038.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">criteria</text>
+<polygon points="392.5,1090.0 467.5,1118.0 392.5,1146.0 317.5,1118.0" fill="#FFF6DD" stroke="#C08A00" stroke-width="1.6"/>
+<text x="392.5" y="1122.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Criteria pass?</text>
+<polygon points="157.5,1081.3125 242.5,1118.0 157.5,1154.6875 72.5,1118.0" fill="#FFF6DD" stroke="#C08A00" stroke-width="1.6"/>
+<text x="157.5" y="1114.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">auto_select ramp</text><text x="157.5" y="1130.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">angle?</text>
+<rect x="65.0" y="1201.7624999999998" width="185" height="62.875" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="157.5" y="1221.9" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">optimise_ramp_angle():</text><text x="157.5" y="1237.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">try other standard pins,</text><text x="157.5" y="1253.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">highest first</text>
+<rect x="65.0" y="1326.5625" width="185" height="62.875" rx="6" fill="#FDECEA" stroke="#C0392B" stroke-width="1.4"/>
+<text x="157.5" y="1346.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">STOP: print failed</text><text x="157.5" y="1362.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">criteria, choose another</text><text x="157.5" y="1378.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">landing angle</text>
+<rect x="285.0" y="1201.7624999999998" width="215" height="62.875" rx="6" fill="#FFFFFF" stroke="#2F6DB5" stroke-width="1.6"/><line x1="293.0" y1="1201.7624999999998" x2="293.0" y2="1264.6374999999998" stroke="#2F6DB5"/><line x1="492.0" y1="1201.7624999999998" x2="492.0" y2="1264.6374999999998" stroke="#2F6DB5"/>
+<text x="392.5" y="1221.9" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">generate_full_sequence(): for</text><text x="392.5" y="1237.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">each current direction (none</text><text x="392.5" y="1253.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">/ in-line / against)</text>
+<rect x="285.0" y="1291.7375000000002" width="215" height="94.125" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="392.5" y="1311.9" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Vertical payout: trunnion 30</text><text x="392.5" y="1327.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">m below surface, buoyancy 10</text><text x="392.5" y="1343.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">m below surface, TRF aux</text><text x="392.5" y="1358.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">steps, connect SIP, build</text><text x="392.5" y="1374.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">layback</text>
+<rect x="285.0" y="1405.15" width="215" height="78.5" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="392.5" y="1425.3" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Jack down each ramp angle</text><text x="392.5" y="1441.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">(8-10 m clearance above</text><text x="392.5" y="1456.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">receptacle); extra payout</text><text x="392.5" y="1472.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">step if payout &gt; max payout</text>
+<rect x="285.0" y="1518.5625" width="215" height="62.875" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="392.5" y="1538.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">No-stop zone: 5 m clearance,</text><text x="392.5" y="1554.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">main trunnion landing, 2nd</text><text x="392.5" y="1570.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">trunnion, TDP 5 m and 20 m</text>
+<path d="M285.0,1618.0 L488.0,1618.0 L500.0,1630.0 L500.0,1674.0 L285.0,1674.0 Z" fill="#F4F4F4" stroke="#666666" stroke-width="1.4"/>
+<text x="392.5" y="1642.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Statics_StepNNN_current-X.dat</text><text x="392.5" y="1658.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">(+ step logs)</text>
+<rect x="990.0" y="644.9625000000001" width="215" height="62.875" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="1097.5" y="665.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">load_context(); ramp angles</text><text x="1097.5" y="680.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">from range (standard pins, or</text><text x="1097.5" y="696.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">every 1 deg in brake mode)</text>
+<rect x="990.0" y="752.3499999999999" width="215" height="78.5" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="1097.5" y="772.5" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">build_lcm(): buoyancy +/- tol</text><text x="1097.5" y="788.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">x wire +/- tol x ramp angles</text><text x="1097.5" y="803.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">x rollerbox openings x</text><text x="1097.5" y="819.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">currents</text>
+<rect x="990.0" y="861.5250000000001" width="215" height="109.75" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="1097.5" y="881.7" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Process pool (cores): per</text><text x="1097.5" y="897.3" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">case set buoyancy, wire,</text><text x="1097.5" y="913.0" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">current, rollerbox; place</text><text x="1097.5" y="928.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">vessel on catenary;</text><text x="1097.5" y="944.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">optimize_configuration() to</text><text x="1097.5" y="959.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">clearance target</text>
+<path d="M990.0,1018.0 L1193.0,1018.0 L1205.0,1030.0 L1205.0,1074.0 L990.0,1074.0 Z" fill="#F4F4F4" stroke="#666666" stroke-width="1.4"/>
+<text x="1097.5" y="1050.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">critical_clr-..._angle-..._current-X.dat</text>
+<rect x="467.5" y="1777.7624999999998" width="320" height="62.875" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="627.5" y="1797.9" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">results: post_process() each step -&gt; lay</text><text x="627.5" y="1813.6" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">table, engineering results, criteria limits</text><text x="627.5" y="1829.2" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">-&gt; Statics_Results_&lt;current&gt;.xlsx</text>
+<rect x="948.75" y="1781.1999999999998" width="180" height="56" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.4"/>
+<text x="1038.75" y="1805.8" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">snapshots: all steps -&gt;</text><text x="1038.75" y="1821.4" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#1F2933">Steps/snapshots.sim</text>
+<rect x="492.3" y="545.2" width="32.4" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="508.5" y="556.2" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#444">full</text>
+<rect x="717.1" y="545.2" width="58.8" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="746.5" y="556.2" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#444">critical</text>
+<rect x="395.5" y="931.3" width="25.8" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="398.5" y="942.3" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="start" fill="#444">yes</text>
+<rect x="490.9" y="871.6" width="19.2" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="500.5" y="882.6" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#444">no</text>
+<rect x="395.5" y="1153.0" width="25.8" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="398.5" y="1164.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="start" fill="#444">yes</text>
+<rect x="273.9" y="1102.0" width="19.2" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="283.5" y="1113.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#444">no</text>
+<rect x="160.5" y="1161.7" width="25.8" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="163.5" y="1172.7" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="start" fill="#444">yes</text>
+<rect x="46.1" y="1102.0" width="19.2" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="55.8" y="1113.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#C0392B">no</text>
+<rect x="248.0" y="1217.2" width="39.0" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="267.5" y="1228.2" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#444">found</text>
+<rect x="160.5" y="1271.6" width="32.4" height="14" fill="#FFFFFF" fill-opacity="0.92"/>
+<text x="163.5" y="1282.6" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="bold" text-anchor="start" fill="#C0392B">none</text>
+<rect x="40" y="1913.0" width="18" height="14" rx="3" fill="#F3ECFA" stroke="#7B4FB0"/>
+<text x="64" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">input</text>
+<rect x="103.0" y="1913.0" width="18" height="14" rx="3" fill="#EAF2FB" stroke="#2F6DB5"/>
+<text x="127.0" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">process</text>
+<rect x="179.2" y="1913.0" width="18" height="14" rx="3" fill="#FFFFFF" stroke="#2F6DB5"/>
+<text x="203.2" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">sub-sequence</text>
+<rect x="288.4" y="1913.0" width="18" height="14" rx="3" fill="#FFF6DD" stroke="#C08A00"/>
+<text x="312.4" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">decision</text>
+<rect x="371.2" y="1913.0" width="18" height="14" rx="3" fill="#F4F4F4" stroke="#666666"/>
+<text x="395.2" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">output file</text>
+<rect x="473.79999999999995" y="1913.0" width="18" height="14" rx="3" fill="#FFF9C4" stroke="#C9B200"/>
+<text x="497.79999999999995" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">manual action</text>
+<rect x="589.5999999999999" y="1913.0" width="18" height="14" rx="3" fill="#FDECEA" stroke="#C0392B"/>
+<text x="613.5999999999999" y="1924.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#3E4C59">stop / warning</text>
+</svg>

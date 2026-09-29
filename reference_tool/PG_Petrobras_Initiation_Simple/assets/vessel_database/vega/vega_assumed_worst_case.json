@@ -1,0 +1,110 @@
+{
+    "Tp below 18s": {
+        "Top UF": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 0,
+            "Wave Tp": 14,
+            "Wave Seed": 98765,
+            "Simulation Time Origin": 7080,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        },
+        "Sag UF": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 135,
+            "Wave Tp": 12,
+            "Wave Seed": 54892,
+            "Simulation Time Origin": 9965,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        },
+        "Tension": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 120,
+            "Wave Tp": 10,
+            "Wave Seed": 54892,
+            "Simulation Time Origin": 8280,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        },
+        "TD Tension": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 150,
+            "Wave Tp": 12,
+            "Wave Seed": 98765,
+            "Simulation Time Origin": 6055,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        }
+    },
+    "Tp below 9s": {
+        "Top UF": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 165,
+            "Wave Tp": 9,
+            "Wave Seed": 12345,
+            "Simulation Time Origin": 3180,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        },
+        "Sag UF": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 120,
+            "Wave Tp": 9,
+            "Wave Seed": 98765,
+            "Simulation Time Origin": 9285,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        },
+        "Tension": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 120,
+            "Wave Tp": 9,
+            "Wave Seed": 54892,
+            "Simulation Time Origin": 7440,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        },
+        "TD Tension": {
+            "Wave Origin X": 62.627,
+            "Wave Origin Y": 0,
+            "Wave Number of Spectral Directions": 11,
+            "Wave Direction Spreading Exponent": 4,
+            "Number of Wave Components Per Direction": 40,
+            "Wave Direction": 120,
+            "Wave Tp": 9,
+            "Wave Seed": 54892,
+            "Simulation Time Origin": 7440,
+            "Simulation Stage 0 Duration": 100,
+            "Simulation Stage 1 Duration": 200
+        }
+    }
+}

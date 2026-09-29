@@ -1,0 +1,88 @@
+{
+    "Name": "Vega",
+    "Ramp": "Vega-Ramp",
+    "Hang-off Locations": {
+        "HOM": [
+            -7.78,
+            0.0,
+            3.2
+        ],
+        "T1": [
+            18.561,
+            0.0,
+            3.2
+        ],
+        "T2": [
+            6.908,
+            0.0,
+            3.2
+        ]
+    },
+    "RAO Types": {
+        "22-Empty-ART-ShipMo-Hs250": [
+            "Empty reel, Active ART Hs=2.5m"
+        ],
+        "22-Mid-ART-ShipMo-Hs250": [
+            "Mid reel, correct GM Hs=2.5m"
+        ],
+        "22-Full-ART-ShipMo-Hs250": [
+            "Max draft, low GM, Active ART - full reel -reduced fuel- close to level trim Hs=2.5m"
+        ]
+    },
+    "A&R Sheaves": {
+        "Port Sheave": [
+            34.54,
+            0.0,
+            3.2
+        ],
+        "Starboard Sheave": [
+            17.105,
+            0.0,
+            3.2
+        ],
+        "Port Wire Catcher": [
+            33.34,
+            0.0,
+            3.2
+        ],
+        "Starboard Wire Catcher": [
+            -0.84,
+            0.0,
+            3.2
+        ]
+    },
+    "A&R Dual Mode": {
+        "Port Sheave": [
+            27.846,
+            4.3,
+            3.2
+        ],
+        "Starboard Sheave": [
+            23.8,
+            -4.3,
+            3.2
+        ],
+        "Port Length to Beam": 10.515,
+        "Starboard Length to Beam": 6.469
+    },
+    "Pin Locations": [
+        45.0,
+        49.4,
+        53.8,
+        58.2,
+        62.6,
+        67.1,
+        71.5,
+        76.1,
+        80.8,
+        85.6,
+        90.5,
+        95.0
+    ],
+    "RollerBox": {
+        "rollers" : ["top", "center", "bottom"],
+        "stiffness" : [3e4, 2.6e4, 3e4],
+        "diameter" : [0.55, 0.55, 0.55],
+        "length" : [3.0, 1.0, 3.0]        
+    }
+}
