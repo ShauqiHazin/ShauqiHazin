@@ -1,0 +1,41 @@
+{
+    "Top UF": {
+        "Wave Origin X": 0,
+        "Wave Origin Y": 0,
+        "Wave Number of Spectral Directions": 11,
+        "Wave Direction Spreading Exponent": 4,
+        "Number of Wave Components Per Direction": 40,
+        "Wave Direction": 15,
+        "Wave Tp": 12,
+        "Wave Seed": 10101,
+        "Simulation Time Origin": 9440,
+        "Simulation Stage 0 Duration": 100,
+        "Simulation Stage 1 Duration": 200
+    },
+    "Sag UF": {
+        "Wave Origin X": 0,
+        "Wave Origin Y": 0,
+        "Wave Number of Spectral Directions": 11,
+        "Wave Direction Spreading Exponent": 4,
+        "Number of Wave Components Per Direction": 40,
+        "Wave Direction": 60,
+        "Wave Tp": 9,
+        "Wave Seed": 54892,
+        "Simulation Time Origin": 5005,
+        "Simulation Stage 0 Duration": 100,
+        "Simulation Stage 1 Duration": 200
+    },
+    "Tension": {
+        "Wave Origin X": 0,
+        "Wave Origin Y": 0,
+        "Wave Number of Spectral Directions": 11,
+        "Wave Direction Spreading Exponent": 4,
+        "Number of Wave Components Per Direction": 40,
+        "Wave Direction": 60,
+        "Wave Tp": 9,
+        "Wave Seed": 54892,
+        "Simulation Time Origin": 5005,
+        "Simulation Stage 0 Duration": 100,
+        "Simulation Stage 1 Duration": 200
+    }
+}

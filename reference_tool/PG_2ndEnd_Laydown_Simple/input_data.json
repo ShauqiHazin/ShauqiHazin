@@ -1,0 +1,291 @@
+{
+    "General": {
+        "jobID": "Yoke.json",
+        "jobDirectory": "C:/Users/S7U04543/Documents/AAA-DIGI/LD/Source00/myTidyEnv/Test-Selection/Yoke/Yoke.json",
+        "clientID": "SS7",
+        "projID": "PG",
+        "scopeID": "8in",
+        "revNo": "0.0",
+        "Comments": "",
+        "WD": "500",
+        "Seawater_density": "1.025",
+        "CurrentOption": "No Current",
+        "CurrentProfile": {
+            "0": {
+                "CurrentDepth": "0.000",
+                "CurrentSpeed": "0.25"
+            },
+            "1": {
+                "CurrentDepth": "100.000",
+                "CurrentSpeed": "0.15"
+            },
+            "2": {
+                "CurrentDepth": "300",
+                "CurrentSpeed": "0.05"
+            },
+            "3": {
+                "CurrentDepth": "500",
+                "CurrentSpeed": "0.01"
+            }
+        }
+    },
+    "pipeGeneral": {
+        "PipeType": "Single Pipe",
+        "Content": "Empty",
+        "ContentDensity": 0,
+        "linedPipe": false,
+        "LineTypeName": "SS7 pipeline",
+        "Pipe1": "SS7 pipeline",
+        "Pipe2": "null",
+        "WD": 500.0
+    },
+    "SS7 pipeline": {
+        "Name": "SS7 pipeline",
+        "Category": "Homogeneous pipe",
+        "OD": 323.9,
+        "ID": 273.9,
+        "WT": 25.0,
+        "CoatingThickness": 2.0,
+        "CoatingMaterialDensity": 0.85,
+        "CRALiningThickness": 0.0,
+        "CRALiningMaterialDensity": 0.0,
+        "DNV_OD": 323.9,
+        "Nominal_Thickness": 25.0,
+        "DNV_tCRA": 0.0,
+        "MaterialDensity": 7.85,
+        "StressStrainRelationship": "Linear",
+        "E": 212000.0,
+        "Cdx": 1.2,
+        "Cax": 1.0,
+        "AllowableStress": "",
+        "SeabedFrictionCoeff_Normal": 0.5,
+        "SeabedFrictionCoeff_Axial": 0.4,
+        "StressStrain_Name": "X65 - R-O",
+        "StressStrain_CurveType": "Ramberg-Osgood curve",
+        "StressStrain_E": 212000.0,
+        "StressStrain_RefStress": 418.13,
+        "StressStrain_K": 0.00087,
+        "StressStrain_n": 17.3,
+        "Fab_thickness_tolerance": 0.0,
+        "Corrosion_allowance": 0.0,
+        "Ovality": 0.03,
+        "Material_grade": "DNV SMLS 450 PD",
+        "DNV_E": 212000.0,
+        "Poissons_ratio": 0.3,
+        "SMYS": 450.0,
+        "SMTS": 535.0,
+        "SMYS_CRA": 0.0,
+        "SMTS_CRA": 0.0,
+        "Fabrication_factor": 0.93,
+        "Material_strength_factor": 0.96,
+        "Pressure_Internal": 0.0,
+        "Design_depth": 1001.0,
+        "Seawater_density": 1.025,
+        "Functional_load_factor_case_a": 1.2,
+        "Functional_load_factor_case_b": 1.1,
+        "Environmental_load_factor_case_a": 0.7,
+        "Environmental_load_factor_case_b": 1.3,
+        "Condition_load_effect_factor": 1.0,
+        "Safety_class_resistance_factor": 1.04,
+        "Material_resistance_factor": 1.15,
+        "Allowable_load_factor": 0.96,
+        "Collapse_factor": 0.7,
+        "Bending_safety_factor": 2.0,
+        "Strain_amplification_factor": 1.0
+    },
+    "Pipe 2": {},
+    "SJGeneral": {
+        "SJrequired": true,
+        "SJLen": 4.5,
+        "SJOD": 333.9,
+        "SJWT": 30.0,
+        "SJID": 273.9,
+        "TJLen": 2.0
+    },
+    "vesselGeneral": {
+        "VesselSelected": "Seven Vega",
+        "VesselRamp": "Vega-Ramp",
+        "RAOSelected": "22-Empty-ART-ShipMo-Hs250",
+        "DraughtSelected": "Empty reel, Active ART Hs=2.5m",
+        "SelectedRampAngle": "71.5",
+        "UseMinRampAngle": true,
+        "MinRampAngle": 45.0,
+        "CustomRampAngle": false,
+        "RampAngleRange": [
+            45.0,
+            49.4,
+            53.8,
+            58.2,
+            62.6,
+            67.1,
+            71.5,
+            76.1,
+            80.8,
+            85.6,
+            90.5,
+            95.0
+        ],
+        "PipeHangOff": "T1",
+        "AR_Mode": "Single Mode",
+        "AR_Hangoff": "Port Sheave",
+        "BeamRigLength": 3.0
+    },
+    "structureGeneral": {
+        "PLETModellingOpt": "Frame & Mudmat (With Wings)",
+        "Frame_Length": 6.035,
+        "Frame_Width": 2.082,
+        "Frame_Height": 2.142,
+        "Frame_AirWeight": 22.23,
+        "Frame_SubWeight": 19.34,
+        "Frame_COG_X": 0.144,
+        "Frame_COG_Y": 0.0,
+        "Frame_COG_Z": 0.4,
+        "Frame_Perfor_X": 0.25,
+        "Frame_Perfor_Y": 0.25,
+        "Frame_Perfor_Z": 0.05,
+        "Mudmat_WingsInc": true,
+        "Frame_Length_WingUp": 8.985,
+        "Frame_Width_WingUp": 2.997,
+        "Frame_Height_WingUp": 4.083,
+        "Frame_AirWeight_WingUp": 35.03,
+        "Frame_SubWeight_WingUp": 30.48,
+        "Frame_COG_X_WingUp": 0.389,
+        "Frame_COG_Y_WingUp": 0.0,
+        "Frame_COG_Z_WingUp": -0.257,
+        "Frame_Perfor_X_WingUp": 0.25,
+        "Frame_Perfor_Y_WingUp": 0.25,
+        "Frame_Perfor_Z_WingUp": 0.25,
+        "Mudmat_Length_WingDown": 8.985,
+        "Mudmat_Width_WingDown": 9.843,
+        "Mudmat_Height_WingDown": 0.508,
+        "Mudmat_AirWeight_WingDown": 12.805,
+        "Mudmat_SubWeight_WingDown": 11.14,
+        "Mudmat_COG_X_WingDown": 0.116,
+        "Mudmat_COG_Y_WingDown": 0.0,
+        "Mudmat_COG_Z_WingDown": 0.132,
+        "Mudmat_Perfor_X_WingDown": 0.03,
+        "Mudmat_Perfor_Y_WingDown": 0.03,
+        "Mudmat_Perfor_Z_WingDown": 0.03,
+        "Mudmat_FrameConnX": -0.402,
+        "Mudmat_FrameConnY": 0.0,
+        "Mudmat_FrameConnZ": -1.325,
+        "AR_Type": "Yoke",
+        "AR_Length": 7.0,
+        "AR_Width": 2.082,
+        "AR_AirWeight": 3.0,
+        "AR_SubWeight": 3.0,
+        "ARYoke_COG": 2.95,
+        "AR_XCoor": 2.4,
+        "AR_YCoor": -1.041,
+        "AR_ZCoor": -0.758,
+        "AR_XCoor_WingUp": 2.4,
+        "AR_YCoor_WingUp": -1.041,
+        "AR_ZCoor_WingUp": -1.22,
+        "AR_YokeStiffnessRows": 4,
+        "AR_YokeStiffnessTable": [
+            {
+                "StiffnessRow": 1,
+                "AngularDisplacement": -90.0,
+                "Moment": -10000.0
+            },
+            {
+                "StiffnessRow": 2,
+                "AngularDisplacement": -89.5,
+                "Moment": -1.0
+            },
+            {
+                "StiffnessRow": 3,
+                "AngularDisplacement": 0.0,
+                "Moment": 0.0
+            },
+            {
+                "StiffnessRow": 4,
+                "AngularDisplacement": 0.05,
+                "Moment": 10000.0
+            }
+        ],
+        "AF_XCoor": -3.017,
+        "AF_YCoor": 0.0,
+        "AF_ZCoor": -0.758,
+        "AF_XCoor_WingUp": -4.283,
+        "AF_YCoor_WingUp": 0.0,
+        "AF_ZCoor_WingUp": -1.22
+    },
+    "buoyGeneral": {
+        "UseBuoyancy": true,
+        "ConnectionType": "Yoke",
+        "Connection_X": -0.395,
+        "Connection_Y": -1.041,
+        "Connection_Z": 1.293,
+        "Connection_X_WingUp": -0.796,
+        "Connection_Y_WingUp": -1.041,
+        "Connection_Z_WingUp": 0.831,
+        "LinkYokeLength": 10.0,
+        "YokeAirWeight": 3.0,
+        "YokeSubWeight": 3.0,
+        "YokeCOG": 2.95,
+        "BuoyancyModuleQuantity": 2,
+        "BuoyTable": [
+            {
+                "BuoyID": 1,
+                "BuoyUplift": 14.0,
+                "BuoyWeight": 5.0,
+                "BuoyLength": 2.0,
+                "SlingOD": 32.0,
+                "SlingLength": 5.0,
+                "SlingMass": 0.004
+            },
+            {
+                "BuoyID": 2,
+                "BuoyUplift": 14.0,
+                "BuoyWeight": 5.0,
+                "BuoyLength": 2.0,
+                "SlingOD": 32.0,
+                "SlingLength": 5.0,
+                "SlingMass": 0.004
+            }
+        ],
+        "BuoyYokeStiffnessRows": 4,
+        "BuoyYokeStiffnessTable": [
+            {
+                "StiffnessRow": 1,
+                "AngularDisplacement": -90.0,
+                "Moment": -10000.0
+            },
+            {
+                "StiffnessRow": 2,
+                "AngularDisplacement": -89.5,
+                "Moment": -1.0
+            },
+            {
+                "StiffnessRow": 3,
+                "AngularDisplacement": 0.0,
+                "Moment": 0.0
+            },
+            {
+                "StiffnessRow": 4,
+                "AngularDisplacement": 0.05,
+                "Moment": 10000.0
+            }
+        ]
+    },
+    "sequenceGeneral": {
+        "WD_Max": 500.0,
+        "CustomMudmatWingClearance": false,
+        "MudmatWingOpeningClearance": 100.0,
+        "DeploymentSequenceOption": "Jack Down at Limit(s)",
+        "Pipe_ClampSJ": true,
+        "LengthSJ_Clamp": 1.0,
+        "PalletStepWireLength": 23.0,
+        "SameRampAngleClamped": true,
+        "PalletStepRampAngle": "71.5",
+        "MaxPayoutRate": 50.0,
+        "Use_VM_Limit": true,
+        "VM_Limit": 340.0,
+        "Use_Strain_Limit": false,
+        "Strain_Limit": 0.15,
+        "Use_LCC_Limit": false,
+        "LCC_Limit": 0.7,
+        "LandOptNoVesselMove": false
+    }
+}

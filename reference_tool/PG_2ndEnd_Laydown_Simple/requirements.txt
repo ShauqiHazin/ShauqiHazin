@@ -1,0 +1,5 @@
+OrcFxAPI
+numpy
+pandas
+scipy
+openpyxl

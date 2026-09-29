@@ -1,0 +1,59 @@
+{
+    "Name": "Navica",
+    "Ramp": "Navica-Ramp",
+    "A&R Wire ID": "250Te winch wire",
+    "AR Winch Limit": {
+        "Single Mode": 250.0
+    },
+    "Bollard Pull Limit": {
+        "Bollard Pull": 102.0
+    },
+    "Hang-off Locations": {
+        "Clamp": [
+            -0.935,
+            0.0,
+            4.503
+        ],
+        "Tensioner Exit": [
+            8.553,
+            0.0,
+            4.503
+        ]
+    },
+    "RAO Types": {
+        "Full Reel 2007": [
+            "6.636m"
+        ]
+    },
+    "A&R Sheaves": {
+        "Upper Sheave": [
+            17.357,
+            0.0,
+            4.503
+        ],
+        "Mid Sheave": [
+            5.792,
+            0.0,
+            4.503
+        ]
+    },
+    "Pin Locations": [
+        20.3,
+        24.1,
+        27.9,
+        31.8,
+        35.7,
+        39.7,
+        43.8,
+        47.9,
+        52.0,
+        56.3,
+        60.7,
+        65.1,
+        69.8,
+        74.5,
+        79.5,
+        84.6,
+        90.0
+    ]
+}

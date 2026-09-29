@@ -1,0 +1,7 @@
+{
+    "input_file": "input_data.json",
+    "analysis_folder": "analysis",
+    "current_options": ["none"],
+    "orcaflex_dll": null,
+    "overrides": {}
+}
