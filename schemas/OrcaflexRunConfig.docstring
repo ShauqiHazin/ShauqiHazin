@@ -1,0 +1,36 @@
+orcaflex_version [Orcaflex Version]: string {12.2d}, default=11.2d
+    The Version of Orcaflex to use
+core_type [Core Type]: string
+    Job core type to use on Rescale
+core_count [Core Count]: string
+    The number of cores that rescale will provide for the job
+job_queue [Queue]: string {short, long, extra_long}, default=long
+    The job queue to use
+scratch_disk [Scratch Disk]: string {large, extra_large}, default=large
+    Scratch Disk Size
+hpc_server [Orcaflex Server]: string {mlkualhc01, uksutthc01}, default=mlkualhc01
+    Windows folder name where the hpc files are located
+drive_letter [Drive Letter]: string {K, M}, default=K
+    Windows drive letter where the hpc files are located
+rescale_project_id [Rescale Project ID]: string
+    The id of the project to assign all Rescale jobs to
+project_id: string
+    The Id of the Project
+project_name: string
+    The Name of the Project
+model_name [Name of Model]: string
+    Name of the Model
+calc_id: string
+    The Id of the Calculation
+calc_name: string
+    The name of the Calculation
+execution_id: string
+    The Execution Id
+execution_name: string
+    The name of the Execution
+wall_time: string
+    The maximum number of hours to run the job for before force-quitting
+billing_priority: string {INSTANT, ON_DEMAND, PRIORITY}, default=INSTANT
+    The method used to allocate the priority for a job on Rescale
+license_server: string, default=27007@VMPRLIC03
+    The value of the LM_LICENSE_FILE environment variable
